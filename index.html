@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrestPoint Insurance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Logo in top left -->
+        <div class="logo-container">
+            <a href="#home">
+                <img src="images/logo.png" alt="Company Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Transport Insurance</a></li>
+                        <li><a href="#">Medical & Accindent Insurance</a></li>
+                        <li><a href="#">Life Assurance</a></li>
+                        <li><a href="#">Retirement Benefits Schemes & Annuities</a></li>
+                        <li><a href="#">Property Insurance</a></li>
+                        <li><a href="#">Liability Insurance</a></li>
+                        <li><a href="#">Bonds</a></li>
+                    </ul>
+                </li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons -->
+        <div class="auth-buttons">
+            <button class="sign-in">Sign In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Navigation (hidden by default) -->
+        <div class="mobile-nav-overlay"></div>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-header">
+                <img src="images/logo.png" alt="Company Logo" class="mobile-logo">
+                <button class="close-menu"><i class="fas fa-times"></i></button>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="#">Life Insurance</a></li>
+                        <li><a href="#">Medical & Accidents Insurance</a></li>
+                        <li><a href="#">Life Insurance</a></li>
+                        <li><a href="#">Retirements Benefit Schemes & Annuities</a></li>
+                        <li><a href="#">Prperty Insurance</a></li>
+                        <li><a href="#">Liability Insurance</a></li>
+                        <li><a href="#">Bonds</a></li>
+                    </ul>
+                </li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-auth-buttons">
+                <button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Smart Protection for What Matters Most</h1>
+                <p class="subheadline">Customized insurance plans at unbeatable prices</p>
+
+                <div class="cta-buttons">
+                    <a href="#quote" class="cta-button primary">Get Your Free Quote</a>
+                    <a href="#about" class="cta-button secondary">Get Started</a>
+                </div>
+
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Trusted by 50,000+ customers</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-star"></i>
+                        <span>A+ BBB Rated</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/home.jpg" alt="Happy family discussing insurance with agent">
+            </div>
+        </div>
+
+        <!-- Mission/Vision Floating Card -->
+        <div class="mission-card">
+            <div class="mission-tabs">
+                <button class="tab-btn active" data-tab="vision">Our Vision</button>
+                <button class="tab-btn" data-tab="mission">Our Mission</button>
+                <button class="tab-btn" data-tab="values">Core Values</button>
+            </div>
+
+            <div class="tab-content active" id="vision">
+                <p>To be the leading choice in insurance solutions, fostering peace of mind through innovative coverage, exceptional service and unwavering integrity.</p>
+            </div>
+
+            <div class="tab-content" id="mission">
+                <p>Crestpoint Insurance Agency is dedicated to providing comprehensive and personalized insurance solutions that empower our clients to navigate life's uncertainties with confidence.</p>
+            </div>
+
+            <div class="tab-content" id="values">
+                <ul class="values-list">
+                    <li><strong>Integrity:</strong> Transparent, honest, and ethical practices</li>
+                    <li><strong>Customer Focus:</strong> Your needs are our priority</li>
+                    <li><strong>Excellence:</strong> Committed to the highest standards</li>
+                    <li><strong>Innovation:</strong> Cutting-edge solutions</li>
+                    <li><strong>Responsiveness:</strong> Quick and effective support</li>
+                    <li><strong>Education:</strong> Empowering informed decisions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Welcome To Crestpoint Insurance Agency</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">As a duly registered and licensed independent insurance agency in Kenya by Insurance Regulatory Authority, we specialize in offering comprehensive coverage in life, general, and medical insurance.</p>
+
+                    <p>At CrestPoint Insurance, we understand that insurance is more than just policies; it's about protecting what matters most to you. CrestPoint Insurance Agency is committed to delivering the best coverage solutions for individuals, families,
+                        and businesses.</p>
+
+                    <div class="highlight-box">
+                        <p>In the unfortunate event of a loss, we offer unlimited support to our clients by guiding them through the entire claims process. Even in the most complex of situations, we advocate for our clients because our customers are our
+                            first priority - not the insurance companies we work with.</p>
+                    </div>
+
+                    <div class="why-choose-us">
+                        <h3>Why Choose CrestPoint?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>24/7 claims support</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-tie"></i>
+                                <span>Local agents who care</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-handshake"></i>
+                                <span>No hidden fees</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line"></i>
+                                <span>10,000+ policies issued</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-smile"></i>
+                                <span>98% customer satisfaction</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="CrestPoint team helping clients" class="main-team-photo">
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h3>Meet Our Leadership</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/ceo.jpg" alt="CEO John Doe" class="team-photo">
+                        <h4>John Doe</h4>
+                        <p class="position">Founder & CEO</p>
+                        <p class="bio">With 15+ years in insurance, John founded CrestPoint to bring transparency to the industry.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/operations.jpg" alt="Operations Head" class="team-photo">
+                        <h4>Jane Smith</h4>
+                        <p class="position">Head of Operations</p>
+                        <p class="bio">Ensures seamless service delivery and client satisfaction.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/sales.jpg" alt="Sales Director" class="team-photo">
+                        <h4>Michael Johnson</h4>
+                        <p class="position">Sales Director</p>
+                        <p class="bio">Specializes in finding perfect coverage for each client's needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <h3>Our Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2010</div>
+                        <div class="timeline-content">
+                            <h4>Founded in Nairobi</h4>
+                            <p>Started with 3 employees serving local businesses</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2014</div>
+                        <div class="timeline-content">
+                            <h4>Expanded to Mombasa</h4>
+                            <p>Opened our second branch with 10 team members</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-content">
+                            <h4>10,000 Policies Milestone</h4>
+                            <p>Celebrated serving our 10,000th client</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <h4>National Recognition</h4>
+                            <p>Awarded "Best Insurance Agency" by Kenya Insurance Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive insurance solutions tailored to your needs</p>
+
+            <div class="services-grid">
+                <!-- Transport Insurances -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/car-shield.jpg" alt="Transport Insurance">
+                    </div>
+                    <h3>Transport Insurances</h3>
+                    <ul class="service-coverage">
+                        <li>Motor Private insurance</li>
+                        <li>Motor Commercial insurance</li>
+                        <li>PSV insurance (Uber/Bolt/Matatus)</li>
+                        <li>Motor Cycle insurance (Boda-boda)</li>
+                        <li>Marine insurance</li>
+                        <li>Aviation insurance</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Medical & Accident -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/medical-cross.jpg" alt="Medical Insurance">
+                    </div>
+                    <h3>Medical & Accident</h3>
+                    <ul class="service-coverage">
+                        <li>Health/Medical Insurance</li>
+                        <li>Personal/Group Accident</li>
+                        <li>Travel Insurance</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Life Assurance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/family-heart.jpg" alt="Life Insurance">
+                    </div>
+                    <h3>Life Assurance</h3>
+                    <ul class="service-coverage">
+                        <li>Whole life assurance</li>
+                        <li>Endowment assurance</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Retirement Benefits -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/retirement.jpg" alt="Retirement Benefits">
+                    </div>
+                    <h3>Retirement Benefits</h3>
+                    <ul class="service-coverage">
+                        <li>Group life assurance</li>
+                        <li>Immediate Annuity</li>
+                        <li>Deferred annuity</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Property Insurances -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/property-shield.jpg" alt="Property Insurance">
+                    </div>
+                    <h3>Property Insurances</h3>
+                    <ul class="service-coverage">
+                        <li>Fire & Perils</li>
+                        <li>Home Insurance</li>
+                        <li>Theft & Burglary</li>
+                        <li>Business Interruption</li>
+                        <li>Crop & Livestock</li>
+                        <li>Domestic package</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">View All 12 Coverages <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Liability Insurances -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/liability.jpg" alt="Liability Insurance">
+                    </div>
+                    <h3>Liability Insurances</h3>
+                    <ul class="service-coverage">
+                        <li>Public Liability</li>
+                        <li>Professional Indemnity</li>
+                        <li>Work Injury Benefit (WIBA)</li>
+                        <li>Employers' Liability</li>
+                        <li>Directors & Officers</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">View All 7 Coverages <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Bonds -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/bond.jpg" alt="Bonds">
+                    </div>
+                    <h3>Bonds</h3>
+                    <ul class="service-coverage">
+                        <li>Performance Bonds</li>
+                        <li>Bid/Tender Bonds</li>
+                        <li>Immigration/Security</li>
+                        <li>Custom Bonds</li>
+                        <li>Warehouse Bonds</li>
+                    </ul>
+                    <a href="#quote" class="learn-more">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Process Flow -->
+            <div class="process-flow">
+                <h3>Simple 3-Step Process</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Get Quote</h4>
+                            <p>Instant online quotes or consultation</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Customize</h4>
+                            <p>Tailor your perfect coverage</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Sign Policy</h4>
+                            <p>Digital signing & immediate coverage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Our Trusted Partners</h2>
+            <p class="section-subtitle">Collaborating with Kenya's leading insurance providers</p>
+
+            <!-- Partner Logos Grid -->
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/britam.png" alt="Britam Insurance">
+                    <span class="partner-badge">Certified Since 2015</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/jubilee.png" alt="Jubilee Insurance">
+                    <span class="partner-badge">Certified Since 2012</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/cic.png" alt="CIC Insurance">
+                    <span class="partner-badge">Certified Since 2014</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/ga.png" alt="GA Insurance">
+                    <span class="partner-badge">Certified Since 2013</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/apa.png" alt="APA Insurance">
+                    <span class="partner-badge">Certified Since 2016</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/aig.png" alt="AIG Insurance">
+                    <span class="partner-badge">Certified Since 2011</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/takaful.png" alt="Takaful Insurance">
+                    <span class="partner-badge">Certified Since 2017</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/trident.png" alt="Trident Insurance">
+                    <span class="partner-badge">Certified Since 2018</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/mornach.png" alt="Monarch Insurance">
+                    <span class="partner-badge">Certified Since 2019</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/aar.png" alt="AAR Insurance">
+                    <span class="partner-badge">Certified Since 2014</span>
+                </div>
+            </div>
+
+            <!-- Testimonials & Affiliations -->
+            <div class="trust-section">
+                <!-- Partner Testimonials -->
+                <div class="testimonials">
+                    <h3>What Our Partners Say</h3>
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"CrestPoint has been a reliable and ethical partner. Our shared clients consistently praise their personalized service and expertise."</p>
+                            <div class="testimonial-author">
+                                <img src="images/jubilee-ceo.jpg" alt="Jubilee CEO" class="author-photo">
+                                <div class="author-info">
+                                    <strong>James Mwangi</strong>
+                                    <span>Director of Partnerships, Jubilee Insurance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Their claims handling process is among the most efficient we've worked with. A true asset to our network."</p>
+                            <div class="testimonial-author">
+                                <img src="images/britam-md.jpg" alt="Britam MD" class="author-photo">
+                                <div class="author-info">
+                                    <strong>Susan Wanjiru</strong>
+                                    <span>Managing Director, Britam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-nav">
+                        <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Affiliation Badges -->
+                <div class="affiliations">
+                    <h3>Our Affiliations</h3>
+                    <div class="badges-grid">
+                        <div class="affiliation-badge">
+                            <img src="images/ira.png" alt="Insurance Regulatory Authority">
+                            <span>Licensed by IRA Kenya</span>
+                        </div>
+                        <div class="affiliation-badge">
+                            <img src="images/aik.png" alt="Association of Kenya Insurers">
+                            <span>AKI Member Since 2012</span>
+                        </div>
+                        <div class="affiliation-badge">
+                            <img src="images/ssl-seal.png" alt="SSL Secured">
+                            <span>256-bit SSL Encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <img src="images/lightbulb.png" alt="FAQ Icon" class="faq-icon">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <!-- Question 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Crestpoint an Insurance Company?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>NO.</strong> Crestpoint is licensed by the Insurance Regulatory Authority (IRA) to operate as an independent insurance agency. We act as an intermediary between the customer and the insurance company. The insurance products
+                            we offer are underwritten by reputable insurance companies in Kenya.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it more expensive when buying insurance from Crestpoint?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>NO.</strong> We compare offers from different insurance companies and recommend the best option thus saving you time and money. We also negotiate for the best terms possible so in most cases our prices are actually lower
+                            than buying directly from the insurance company.</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I choose my preferred insurance company?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>YES.</strong> We consider various factors and recommend the best insurance company but the final decision ultimately belongs to the client.</p>
+                    </div>
+                </div>
+
+                <!-- Divider with Shield Icon -->
+                <div class="faq-divider">
+                    <img src="images/shield-divider.png" alt="Shield Icon">
+                </div>
+
+                <!-- Question 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the advantage of buying through Crestpoint?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer you convenience & personalized service. First, by working with several insurance companies, we'll always find you the best deal in terms of cost and coverage. Secondly, you can rest easy in the event of a loss because
+                            we'll walk you through the entire claims process. We follow-up with the insurance company on your behalf and leverage on our good relationships to ensure that you get compensated quickly.</p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who do I contact in case of a loss?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>In the unfortunate event of a loss, reach out to us via call/WhatsApp/SMS through <strong>0721227602</strong> or Email <strong>crestpointinsuranceagency@gmail.com</strong>. We'll guide you on the next steps to be taken.</p>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my personal data safe with you?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>YES.</strong> Your personal data is kept completely private and confidential. Data that you provide to us for the purpose of getting insurance quotes or buying insurance products will not be passed on to third party advertisers,
+                            we constantly update our security protection to keep your data safe.</p>
+                    </div>
+                </div>
+
+                <!-- Additional Questions -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly can I get coverage?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most policies are active within 24 hours of completing the application and payment process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What payment plans do you offer?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer flexible payment options including monthly, quarterly, or annual payment plans to suit your financial needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claims Process Visual Aid -->
+            <div class="claims-process">
+                <h3>How Claims Work</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="images/claim-report.png" alt="Report Icon">
+                        </div>
+                        <h4>1. Report Claim</h4>
+                        <p>Contact us immediately via phone, email, or WhatsApp</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="images/claim-docs.png" alt="Documents Icon">
+                        </div>
+                        <h4>2. Submit Documents</h4>
+                        <p>We'll guide you on required documentation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="images/claim-review.png" alt="Review Icon">
+                        </div>
+                        <h4>3. Assessment</h4>
+                        <p>We handle all insurer communications</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="images/claim-payment.png" alt="Payment Icon">
+                        </div>
+                        <h4>4. Settlement</h4>
+                        <p>Receive your compensation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-questions">
+                <p>Still have questions?</p>
+                <a href="#contact" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our insurance experts</p>
+
+            <div class="contact-content">
+                <!-- Left Side - Map -->
+                <div class="contact-map">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.854559245744!2d36.70821531526309!3d-1.268785535975848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b1e8d9a82a9%3A0x1d5e6f1b1e8d9a82a9!2sWaterfront%20Karen%2C%20B1%20(Basement%20One)!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="map-marker">
+                            <img src="images/map-marker.png" alt="Location Marker">
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Physical Address</h4>
+                                <p>Waterfront Karen, B1 (Basement One)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:+254721227602">0721227602</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:crestpointinsuranceagency@gmail.com">crestpointinsuranceagency@gmail.com</a><br>
+                                    <a href="mailto:info@crestpointinsurance.com">info@crestpointinsurance.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Website</h4>
+                                <p><a href="https://www.crestpointinsurance.com" target="_blank">www.crestpointinsurance.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM<br> Saturday: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Form -->
+                <div class="contact-form">
+                    <form id="insurance-contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="transport">Transport Insurances</option>
+                                <option value="medical">Medical & Accident</option>
+                                <option value="life">Life Assurance</option>
+                                <option value="retirement">Retirement Benefits</option>
+                                <option value="property">Property Insurances</option>
+                                <option value="liability">Liability Insurances</option>
+                                <option value="bonds">Bonds</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="licenses.html">Licenses</a></li>
+                        <li><a href="complaints.html">Complaints Procedure</a></li>
+                        <li><a href="disclosures.html">Disclosures</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Waterfront Karen, B1 (Basement One)</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+254721227602">0721227602</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@crestpointinsurance.com">info@crestpointinsurance.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Payment -->
+                <div class="footer-section">
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <h4>Payment Methods</h4>
+                        <div class="payment-icons">
+                            <img src="images/visa.png" alt="Visa">
+                            <img src="images/mastercard.png" alt="Mastercard">
+                            <img src="images/amex.png" alt="American Express">
+                            <img src="images/mpesa.png" alt="M-Pesa">
+                            <img src="images/paypal.png" alt="PayPal">
+                            <img src="images/bank-transfer.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards & Recognition -->
+            <div class="awards-section">
+                <div class="award-badge">
+                    <img src="images/best-2024.png" alt="Best of 2024 Award">
+                    <span>Best Insurance Agency 2024</span>
+                </div>
+                <div class="award-badge">
+                    <img src="images/trusted.png" alt="Trusted Partner">
+                    <span>Trusted Partner</span>
+                </div>
+                <div class="award-badge">
+                    <img src="images/customer-choice.png" alt="Customer Choice">
+                    <span>Customer Choice Award</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright-section">
+            <div class="container">
+                <p>&copy; 2024 CrestPoint Insurance Agency. All rights reserved. | Registered by Insurance Regulatory Authority (Kenya)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
